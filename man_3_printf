@@ -1,0 +1,32 @@
+.TH man 0 "31 Jul 2019 "0.1" "_printf man page"
+.SH NAME
+. _printf
+- format for output conversion
+.SH SYNOPSIS
+. We have used these prototype functions
+.PP
+.B int 
+.PP
+.B int
+.PP
+.B int
+.PP
+.B int
+.PP
+.B int
+.PP
+.B int
+.PP
+.B int
+.PP
+.B int
+.PP
+.B int
+.PP
+.B int
+.SH DESCRIPTION
+.PP
+.SH OPTIONS
+.PP
+.SH AUTHOR
+
