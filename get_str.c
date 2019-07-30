@@ -13,6 +13,8 @@ int (*get_op_func(char s))(va_list)
 mr L[] = {
 	{"c", print_char},
 	{"s", print_string},
+	{"i", print_int},
+	{"d", print_dec},
 	{NULL, NULL}
 };
 int i = 0;

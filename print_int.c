@@ -8,25 +8,39 @@
  * Return: lenght.
  */
 
-int print_number(int n)
+int print_dec(va_list var)
 {
-	int count_1;
-	unsigned int numero;
+	unsigned int count_1, count_2, aux, c;
+	int numero;
 
-	numero = n;
+	numero = va_arg(var, int);
 	count_1 = 0;
-	if (n < 0)
+
+	if (numero < 0)
 	{
-		putchar('-');
-		numero = -numero;
+		c = numero * - 1;
+		count_1 = count_1 + _putchar ('-');
 	}
-	if (n == 0)
+	else
 	{
-		count_1 = count_1 + putchar('0');
-		return (count_1);
+		c = numero;
 	}
-	if (numero / 10)
-		count_1 = count_1 + print_number(numero / 10);
-	count_1 = count_1 + putchar(numero % 10 + '0');
+	aux = c;
+	count_2 = 1;
+        while (aux > 9)
+	{
+		aux = aux / 10;
+	        count_2 = count_2 * 10;
+	}
+	while (count_2 >= 1)
+	{
+		count_1 += _putchar(((c / count_2) % 10) + '0');
+		count_2 = count_2 / 10;
+	}
 	return (count_1);
+}
+
+int print_int(va_list var)
+{
+	return (print_dec(var));
 }
