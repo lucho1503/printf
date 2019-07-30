@@ -2,6 +2,7 @@
 #define PRINT_F
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <stdarg.h>
 
 /**
@@ -14,17 +15,16 @@
 
 typedef struct str
 {
-	char c;
+	char *c;
 	int (*f)(va_list);
 } mr;
 
-int print_number(int n);
 int print_int(va_list var);
-int print_per(va_list var);
 int _printf(const char *format, ...);
 int print_char(va_list var);
 int print_string(va_list var);
 int _putchar(char c);
 int print_dec(va_list var);
+int (*get_op_func(char s))(va_list var);
 
 #endif /* PRINT_F */

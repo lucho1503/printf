@@ -11,13 +11,14 @@ int print_string(va_list var)
 {
 	char *l;
 	int i;
+	int j = 0;
 
 	l = va_arg(var, char *);
 		if (l == NULL)
 		{
-			return (0);
+			l = "(nil)";
 		}
 		for (i = 0; l[i] != '\0'; i++)
-			putchar(l[i]);
-		return (i);
+			j = j + _putchar(l[i]);
+		return (j);
 }
