@@ -2,31 +2,57 @@
 .SH NAME
 . _printf
 - format for output conversion
-.SH SYNOPSIS
-. We have used these prototype functions
+.BSH SYNOPSIS
+.B all our code was incorporated into the library in the header "holberton.h"
 .PP
-.B int 
+.B We have used these prototype functions
 .PP
-.B int
+.B int _printf(const char *format, ...);
 .PP
-.B int
+.B int print_number(int n)
 .PP
-.B int
+.B int print_int(va_list var)
 .PP
-.B int
+.B int print_per(va_list var)
 .PP
-.B int
+.B int _printf(const char *format, ...)
 .PP
-.B int
+.B int print_char(va_list var)
 .PP
-.B int
+.B int print_string(va_list var)
 .PP
-.B int
+.B int _putchar(char c)
 .PP
-.B int
+.B int print_dec(va_list var)
+.PP
 .SH DESCRIPTION
+Proceed to print the arguments according to the format
 .PP
-.SH OPTIONS
+.B with the percent character "%" we start the format specification, then it is specified what type of conversion is applied
+.PP
+.B When is s, the argument is a string of characters and is waiting for an array.
+.PP
+.B When is c, the argument becomes a character and then we proceed to write.
+.PP
+.B When is %, the argument prints another additional character.
+.PP
+.B When is d, the argument is an enterio, and it becomes a decimal notation that can be negative or positive
+.PP
+.B When is i, the argument is an integer, It happens with the same case as with the integrated numbers, becomes a decimal notation with symbols
+.PP
+.B When is u, the argument becomes an unsigned decimal notation
+.PP
+.B When is o, the argument int becomes an octal annotation without signs
+.PP
+.B When is x, The argument int becomes an unsigned hexadecimal annotation with lowercase letters
+.PP
+.B when is X, The same in the argument x with lowercase letters, it becomes hexadecimal with annotation in capital letters
+.PP
+.PP BUGS
+.PP
+.B No errors were found when running the program
 .PP
 .SH AUTHOR
-
+.PP
+.B This manual page was written by Luis Miguel Cano and Jose Gabriel Guerra
+.PP
