@@ -3,8 +3,8 @@
 #include <stdarg.h>
 
 /**
- * print_number - Entry point
- * @n: numbers to arguments.
+ * print_dec - Entry point
+ * @var: numbers of arguments that pass and acced to arguments.
  * Return: lenght.
  */
 
@@ -18,7 +18,7 @@ int print_dec(va_list var)
 
 	if (numero < 0)
 	{
-		c = numero * - 1;
+		c = numero * -1;
 		count_1 = count_1 + _putchar ('-');
 	}
 	else
@@ -27,10 +27,10 @@ int print_dec(va_list var)
 	}
 	aux = c;
 	count_2 = 1;
-        while (aux > 9)
+	while (aux > 9)
 	{
 		aux = aux / 10;
-	        count_2 = count_2 * 10;
+		count_2 = count_2 * 10;
 	}
 	while (count_2 >= 1)
 	{
@@ -39,6 +39,13 @@ int print_dec(va_list var)
 	}
 	return (count_1);
 }
+
+/**
+ * print_int - Entry point
+ * @var: numbers of arguments that pass and acced to arguments.
+ * Return: function print_dec.
+ */
+
 
 int print_int(va_list var)
 {
