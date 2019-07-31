@@ -1,3 +1,4 @@
-# prueba
-# printf
-# printf
+_printf
+
+Our first project as software development students at holberton school
+
