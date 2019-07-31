@@ -10,3 +10,14 @@ Description
 
 Proceed to print the arguments according to the format
 
+type of data.
+
+ %c converts characters.
+
+ %s converts strings.
+
+ %i converts integers.
+
+ %d converts decimal.
+
+ %% print one %.
