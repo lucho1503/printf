@@ -43,5 +43,9 @@ contador += (p ? p(valist) : _putchar(format[i]) + _putchar(format[i + 1]));
 		}
 		va_end(valist);
 	}
+	else
+	{
+		return (-1);
+	}
 	return (contador);
 }
