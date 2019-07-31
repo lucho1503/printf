@@ -4,6 +4,14 @@
 
 ## Our first project as software development students at holberton school
 
+## Define
+
+* Create a file whit a function format for output conversion, receive some arguments, and take into account the format produces a result
+
+* This function returns a number of printed characters excluding the null byte to end the string output
+
+* To use our printf function, it is necessary to include the file holberton.h
+
 # Synopsis
 
 ## Header used
