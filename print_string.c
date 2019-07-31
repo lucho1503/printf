@@ -16,9 +16,9 @@ int print_string(va_list var)
 	l = va_arg(var, char *);
 		if (l == NULL)
 		{
-			l = "(nil)";
+			l = NULL;
 		}
-		for (i = 0; l[i] != '\0'; i++)
+		for (i = 0; l[i]; i++)
 			j = j + _putchar(l[i]);
 		return (j);
 }
