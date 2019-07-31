@@ -1,23 +1,53 @@
-_printf
+![Holberton Logo](https://www.holbertonschool.com/holberton-logo.png)
 
-Our first project as software development students at holberton school
+# Project _printf();
 
-The main function
+## Our first project as software development students at holberton school
 
-int printf(const char * format, ...)
+# Synopsis
 
-Description
+## Header used
+* "holberton.h"
+* <stdlib.h>
+* <stdio.h>
+* <stdarg.h>
 
-Proceed to print the arguments according to the format
+## Main function 
 
-type of data.
+### int printf(const char * format,...)
 
- %c converts characters.
+## Current Conversion Specifiers
+| Specifier | Description |
+| --------  | ----------- |
+| %c | writes a single character |
+| %s | writes a character string |
+| %% | writes the literal % |
+| %d | writes the decimal form a signed integer |
+| %i | writes the decimal form a signed integer |
+| %u | writes the decimal form of an unsigned integer |
 
- %s converts strings.
+## Functions
 
- %i converts integers.
+* **int _putchar(char c);**
+> Writes the character c to stdout
 
- %d converts decimal.
+* **int print_int(va_list var);**
+> Is a function write an integers and decimals
 
- %% print one %.
+* **int print_char(va_list var);**
+> Is a function write just an character
+
+* **int print_string(va_list var);**
+> Is a function write a string
+
+* **int print_dec(va_list var);**
+> Is a function write the decimal form
+
+* **int (get_op_func(char s))(va_list var);**
+> It is a function that the structure data is equal to the arguments
+
+
+## Authors
+
+* [@luchito](https://twitter.com/luchito1503)
+* [@prototipo3d](https://twitter.com/prototipo3d)
