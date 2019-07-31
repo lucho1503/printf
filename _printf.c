@@ -8,8 +8,7 @@
 
 int _printf(const char *format, ...)
 {
-	int contador = -1;
-	int i = 0;
+	int contador, i = 0;
 	va_list valist;
 	int (*p)(va_list);
 
@@ -46,7 +45,7 @@ contador += (p ? p(valist) : _putchar(format[i]) + _putchar(format[i + 1]));
 	}
 	else
 	{
-		return(-1);
+		return (-1);
 	}
 	return (contador);
 }
