@@ -57,5 +57,5 @@
 
 ## Authors
 
-* [@luchito]Luis Cano(https://twitter.com/luchito1503)
-* [@prototipo3d]Jose Guerra(https://twitter.com/prototipo3d)
+* [@luchito] Luis Cano (https://twitter.com/luchito1503)
+* [@prototipo3d] Jose Guerra (https://twitter.com/prototipo3d)
