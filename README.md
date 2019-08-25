@@ -1,4 +1,4 @@
-![Holberton Logo](https://twitter.com/gefrancof/status/1163999818114621441?s=20)
+![Holberton Logo]()
 
 # Project _printf();
 
